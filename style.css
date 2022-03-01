@@ -1,0 +1,93 @@
+<style>
+.container{
+  background-color: rgb(134, 122, 122);
+  color:rgb(29, 7, 7);
+}
+h1,p{
+    font-family:Times New Roman;
+}
+body {
+    height: auto;
+    background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  }
+.parallax {
+    background-image: url("C:/Users/user/OneDrive/Desktop/SIST_website/image.jpg");
+    filter: grayscale(100%)
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+body{
+  overflow:auto;
+}
+#moto{
+  animation:mymove 5s infinite;
+}
+.About_US{
+    background:none;
+    transition: width 2s, height 4s;
+    animation: mymove 5s infinite;
+  }
+  
+.About_US:hover {
+    padding:20px;
+    transition: 2s;
+  }
+
+@keyframes mymove {
+  50% {box-shadow: 10px 20px 50px blue;}
+}
+
+.image1{
+  margin-top: 2px;
+  margin-right: 20px;
+  height:10%;
+  width: 25%;
+  float:right;
+  border-radius: 12px;
+}
+.faq_main{
+  animation:mymove 5s infinite;
+  border-radius:10px;
+}
+.sec2{
+  background:none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: width 2s, height 4s;
+  animation:mymove 5s infinite;
+}
+.sec2:hover{
+  padding:20px;
+  transition:2s;
+}
+.footer{
+  margin-top: 10px;
+  background: linear-gradient(141deg, #043d39 0%, #081516 51%, #151616 75%);
+}
+.section-1>p{
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 10px;
+  color:white;
+  font-size: 15px;
+}
+.section-2{
+  font-family: 'Times New Roman', Times, serif;
+  color:white;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 10px;
+}
+
+</style>

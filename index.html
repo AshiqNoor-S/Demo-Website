@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>SIS_Transport</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="faq.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+ 
+    <body>
+    <div class="parallax">
+    <div class = "container">
+        <div class="jumbotron text-center">
+            <div class="row">
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                      <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>                        
+                        </button>
+                        <a class="navbar-brand" href="#">SIS Juwaiza</a>
+                      </div>
+                      <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                          <li class="active"><a href="#">Home</a></li>
+                          <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Main<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#About_US">About US</a></li>
+                              <li><a href="transport_details\transport_details.html">Transport Details</a></li>
+                              <li><a href="C:/Users/user/OneDrive/Desktop/SIST_website/fee_structure/fee_structure.html">Fees Structure</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#FAQs">FAQs</a></li>
+                          <li><a href="#footer">Contact US</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        <h1>SHARJAH INDIAN SCHOOL</h1>
+        <p id='moto'>Educate Enlighten Empower</p>
+        </div> 
+    </div>
+    </div>
+    <p> </p>
+    <div class="About_US container" id="About_US">
+        <h1 class="container">ABOUT US</h1>
+        <p class="container">
+            Sharjah Indian School is a Senior Secondary School, Owned and Managed by Indian Association Sharjah. Established in 1979 with 280 pupils and 13 teachers, the school stands as a landmark in the annals of the Indo- UAE friendship. Today after 42 years, the school has a strength of 13,937 students and 588 teachers (Including Both Branches).[2] The school is approved and licensed by the private Education Department of the Ministry of Education, UAE and is affiliated to Central Board of Secondary Education, New Delhi, India. The school which stands on a plot of land donated by Sheikh Sultan Bin Mohammed Al Qassimi, member of the supreme council and ruler of Sharjah, has a purpose built and magnificent infrastructure.
+        </p>
+    </div>
+    
+  <!-- Section II -->
+  <div class='sec2 container'>
+  <h1 class='container' style="font-family: 'Times New Roman', Times, serif;">HISTORY</h1>
+  <!--img class='image1' src="image.jpg"-->
+  <p class='container'>The school is owned and managed by the Indian Association Sharjah. The administration of the school is carried out by the Managing Committee elected by the members of the Indian Association Sharjah. The Management of the school has been very sincere and supportive in the growth of the school. They have taken up the progress and development of the school as their prime responsibility and duty and are highly involved in the day-to-day activities of the school. The Managing Committee is elected by the members of the Indian Association Sharjah. The tenure of the committee is one year. The managing Committee consists of the President, Vice President, General Secretary, Joint General Secretary, Treasurer, Joint Treasurer, Auditor and Committee Members. The school community is grateful to the management for their unfailing and dedicated support and guidance.</p>
+  </div>
+  <!---------------->
+
+  <!-- FAQ SECTION -->
+  <div class='container faq_main' id='FAQs'>
+    <h2 style="color:rgb(0, 0, 0); text-align:center; font-family: 'Times New Roman', Times, serif;">FAQs</h2>
+    <div class="layout">
+
+      <div class="accordion">
+        <div class="accordion__question">
+          <p>Where is the school located ?</p>
+        </div>
+        <div class="accordion__answer">
+          <p>Juwaiza , Sharjah</p>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion__question">
+          <p>What is the office timing ?</p>
+        </div>
+        <div class="accordion__answer">
+          <p>8:00am - 1:00pm</p>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion__question">
+          <p>What is the curriculum followed ?</p>
+        </div>
+        <div class="accordion__answer">
+          <p>CBSE</p>
+        </div>
+      </div>
+    </div>
+  
+    <script>
+      let answers=document.querySelectorAll(".accordion");
+      answers.forEach((event)=>{
+        event.addEventListener('click',()=>{
+          if(event.classList.contains("active")){
+            event.classList.remove("active");
+          }
+          else{
+            event.classList.add("active");
+          }
+        })
+      })
+    </script>
+  </div>
+
+  <div class="footer container-fluid grid-container " id="footer">
+      <div class='section-1 grid-item'>
+        <h3 style="color: white; font-family: 'Times New Roman', Times, serif;">Contact US</h3>
+        <p>Mobile : 055-0000000</p>
+        <p>Telephone : 06-78999999</p>
+        <p>Email : xxx@xxxxxx.com</p>
+      </div>
+      <div class='section-2 grid-item'>
+        <h3>Location Map</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.801187873889!2d55.40587131481766!3d25.34445158382785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f596363e5f7b5%3A0x6d09e16060bd848!2sSharjah%20Indian%20School!5e0!3m2!1sen!2sae!4v1643494325601!5m2!1sen!2sae" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class='section-3 grid-item'>
+        <img class='grid-item container' src="logo.jpg" style="width:400px;height:200px;margin-top: 60px;">
+      </div>
+  </div>
+  </body>
+</html>
